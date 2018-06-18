@@ -59,3 +59,61 @@
 
 </body>
 </html>
+
+
+<script> // Javascript to confirm the password
+      
+  $(function() {
+  
+    // Setup form validation on the #registrationpage element
+    $("#registrationpage").validate({
+    
+        // Specify the validation rules
+        rules: {
+            firstname: "required",
+            lastname: "required",
+            email: {
+				required: true,
+				email: true	
+            },
+            contact: "required",
+            address: "required",
+            password: {
+                required: true,
+                minlength: 5
+            },
+            cfpassword: {
+				required: true,
+				minlength: 5
+            }
+        },
+        
+        // Specify the validation error messages
+        messages: {
+            firstname: "Please enter your first name",
+            lastname: "Please enter your last name",
+            email: {
+				required: "Please enter your email address",
+				email: "Please enter a valid email address"	
+            },
+            contact: "Please enter a contact number",
+            address: "Please enter your address!",
+            password: {
+                required: "Please enter a password",
+                minlength: "Your password must be at least 5 characters long"
+            },
+            cfpassword:{
+            	required: "The passwords you typed did not match!",
+                minlength: "Your password must be at least 5 characters long"
+            }
+        },
+        
+        submitHandler: function(form) {
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+  });
+  
+  </script>
