@@ -43,7 +43,9 @@
     Email<br>
     <input type="text" email="" name="email" placeholder="email@domain.com" required autofocus/> <br>
     Password<br>
-    <input type="text" password="" name="password" placeholder="*******" required autofocus /> <br>
+    <input type="password" password="" name="password" placeholder="*******" required autofocus /> <br>
+    Confirm Password<br>
+    <input type="password" confpassword="" name="confirmpassword" placeholder="*******" required autofocus /> <br>
     <input type="submit" name="Register"/>
 
 </form>
