@@ -22,6 +22,27 @@
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
+<body>
+    <div class= "loginbox">
+    <form action="registration.php" method="post">
+        Email<br>
+        <input type="text" email="" placeholder="e-mail@domain.com"/> <br>
+        Password<br>
+        <input type="password" name="" placeholder="*******"/> <br>
+        <input type="submit" name="Login" value="Login" />
+        Don't have an account? <a href="registrationpage.php"><FONT color="blue">Register here.</FONT></a>
+
+</form>
+
+</div> 
+
+
+    
+    <div id ="footer">© 2015-2018, Abrielle's Cuisine</div>
+
+
+</body>
+</html>
 
     
 	
