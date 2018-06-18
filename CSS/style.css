@@ -46,6 +46,7 @@ h4
  text-align: center;
  text-decoration: underline;
 }
+
 /* Table */
 th{
 	font-size: 25px;
@@ -63,6 +64,7 @@ table{
 #container{
 	width:100%;
 }
+
 /* Div Alignment */
 #for_left{
 	width:300px;
@@ -92,7 +94,11 @@ table{
     border-top: 2px solid #D3D3D3;
     text-align: center;
 	
-}* Add a black background color to the top navigation */
+}
+
+
+
+/* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -194,8 +200,6 @@ table{
 }
 
 
-
-
 #logo{  /* Logo addition here*/
 	width:50px;
 	height:50px;
@@ -203,6 +207,3 @@ table{
 	z-index:300;
 	border-right: 1px solid #000;
 }
-
-
-
