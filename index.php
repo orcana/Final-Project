@@ -3,7 +3,7 @@
 <head>
     <title>Abrille's Cuisine</title>
     <div id ="logo">
-        <img src="logo.jpg" alt = "logo" width ="50px" height="48px" usemap="logo"></img>
+        <img src="pics/logo.jpg" alt = "logo" width ="50px" height="48px" usemap="logo"></img>
         <map name ="logo">
         <area shape="rect" coords="0,0,150,150" href="index.php" alt="Logo">
         </map>
