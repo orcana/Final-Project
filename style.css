@@ -28,3 +28,12 @@ h2
  text-align: center;
 }
 
+h3
+{
+ margin: 0;
+ padding: 0 0 35px;
+ color: #ffffff;
+ text-align: center;
+ text-decoration: underline;
+ font-family:"Vijaya";
+}
