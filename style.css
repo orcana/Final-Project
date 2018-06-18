@@ -1,0 +1,12 @@
+/* Main Body of the page */
+body
+{
+ 
+ margin: 0;
+ padding:0;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color: #000000;
+ font-family: sans-serif;
+ color:#ffffff;
+}
