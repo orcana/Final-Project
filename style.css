@@ -121,3 +121,14 @@ table{
 }
 
 
+
+#logo{  /* Logo addition here*/
+	width:50px;
+	height:50px;
+	position:fixed;
+	z-index:300;
+	border-right: 1px solid #000;
+}
+
+
+
