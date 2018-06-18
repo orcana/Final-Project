@@ -10,3 +10,11 @@ body
  font-family: sans-serif;
  color:#ffffff;
 }
+
+/* Headings */
+h1{
+	color:#FFFFFF;
+	font-family:"Vijaya";
+	font-size: 50px;
+	text-align: center
+}
