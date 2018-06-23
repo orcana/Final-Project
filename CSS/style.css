@@ -1,11 +1,6 @@
 /* Main Body of the page */
 body
 {
- 
- margin: 0;
- padding:0;
- background-repeat: no-repeat;
- background-size: cover;
  background-color: #000000;
  font-family: sans-serif;
  color:#ffffff;
@@ -160,6 +155,7 @@ table{
  width: 100%;
  margin-bottom: 20px;
 }
+
 .loginbox input[type="text"],
 .loginbox input[type="password"]
 {
@@ -203,7 +199,6 @@ table{
 #logo{  /* Logo addition here*/
 	width:50px;
 	height:50px;
-	position:fixed;
-	z-index:300;
 	border-right: 1px solid #000;
+    float: left;
 }
