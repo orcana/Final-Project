@@ -34,25 +34,25 @@
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
   <img src="pics/two_seater.jpg" style="width:100%">
-  <div class="text">Seats two persons, perfect for seating of a single person or couple</div>
+  <div class="text">Seats two persons, perfect for seating of a single person or couple.</div>
 </div>
 <br><br>
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
   <img src="pics/four_seater.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <div class="text">Seats four to eight persons, perfect for a small group.</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
   <img src="pics/eight_seater.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div class="text">Seats eight to twelve persons./div>
 </div>
      
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
   <img src="pics/twelve_seater.jpg" style="width:100%">
-  <div class="text">Caption Four</div>
+  <div class="text">Seats twelve to eighteen persons perfect for large groups.</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
