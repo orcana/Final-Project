@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,23 +27,80 @@
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
-
-
-
-    <table bordercolor="white" rowcolor="white">
-    <tr>
-    <th colspan="2"><h3>Available Seats</h3></th>    
-    </tr>
         
-    <tr>
-        <th><h2>Table</h2></th>
-        <th><h2>Description</h2></th>
-        
-    </tr>
+<!-- Slideshow container -->
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="pics/two_seater.jpg" style="width:100%">
+  <div class="text">Seats two persons, perfect for seating of a single person or couple</div>
+</div>
+<br><br>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="pics/four_seater.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="pics/eight_seater.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+     
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="pics/twelve_seater.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
     
     </table>
     <br>
     <br>
+    
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
   <p align = "center">To make a reservation,<a href="reserveseat.php"><FONT color="blue"> Click here.</FONT></a>
 <div id ="footer">© 2015-2018, Abrielle's Cuisine</div>
 </body>
