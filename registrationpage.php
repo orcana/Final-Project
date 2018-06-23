@@ -8,15 +8,17 @@
 
 </head>
 <body>
-   <div id ="logo">
-        <img src="logo.jpg" alt = "logo" width ="50px" height="48px" usemap="logo"/>
-        <map name ="logo">
-        <area shape="rect" coords="0,0,150,150" href="index.php" alt="Logo"/>
-        </map>
+   <section>
+       
+      <div id ="logo">
+        <img src="pics/logo.jpg" alt="logo" width ="50px" height="48px" />
     </div>
-    <h1>Register</h1>
-	
-	
+       <h1>Abrille's Cuisine</h1>
+     
+    
+    </section>
+  
+
 	
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
