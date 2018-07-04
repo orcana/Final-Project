@@ -48,7 +48,8 @@
     <input type="password" password="" name="password" placeholder="*******" required autofocus /> <br>
     Confirm Password<br>
     <input type="password" confpassword="" name="confirmpassword" placeholder="*******" required autofocus /> <br>
-    <input type="submit" name="Register"/>
+    
+  </a>  <input type="submit" name="Register"/>
 
 </form>
 
