@@ -1,3 +1,5 @@
+<?php $con = mysqli_connect('localhost','root','','project cs');?>
+
 <!DOCTYPE html>
 <html>
 <head>
