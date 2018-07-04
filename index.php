@@ -12,9 +12,9 @@
    <section>
        
       <div id ="logo">
-        <img src="pics/logo.jpg" alt="logo" width ="50px" height="48px" />
+       Phone: +123-456-7890 
     </div>
-       <h1>Abrille's Cuisine</h1>
+       <h1><a href="index.php"><img src="pics/mainlogo.png" alt="logo" width ="120px" height="120px"/></h1>
      
     
     </section>
