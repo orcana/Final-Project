@@ -40,14 +40,15 @@
     <option value="Friday">Friday</option>
     <option value="Saturday">Saturday</option>
   </select><br><br><br><br>
-    Select Seat  Type:<br>    
+    Select Seat Type:<br>    
   <select name="Seating">
     <option value="2 Seats">Two Seater</option>
     <option value="4 Seats">Four Seater</option>
     <option value="12 Seats">Twelve Seater</option>
     <option value="16 Seats">Sixteen Seats</option>
   </select><br><br><br><br>
-  <select name="Seating">
+    Select Time:<br> 
+  <select name="Time">
     <option value="10:00 AM">10:00 AM</option>
     <option value="11:00 AM">11:00 AM</option>
     <option value="12:00 PM">12:00 PM</option>
