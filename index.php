@@ -1,3 +1,13 @@
+<?php 
+$con = mysqli_connect('localhost','root','','project cs');
+$ID=$_SESSION['ID'];
+$query="SELECT * FROM registereusers WHERE user_id=$ID";
+	$result = mysqli_query($con,$query);
+	$row= mysqli_fetch_assoc($result);
+	$Name=$row['firstname'];
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,13 +21,19 @@
     
    <section>
        
-      <div id ="logo">
-       Phone: +123-456-7890 
-    </div>
+      
        <h1><a href="index.php"><img src="pics/mainlogo.png" alt="logo" width ="120px" height="120px"/></h1>
      
     
     </section>
+       
+     <section>
+       
+      
+       <h1>Welcome, <?php echo "$Name"?> <h1> 
+     
+    
+    </section>   
   
 
 	
