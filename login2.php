@@ -1,3 +1,12 @@
+<?php 
+	$errors = array(
+		1=>"Invalid user name or password, Try again",
+		2=>"Please login to access this area"
+	);
+	$error_id = isset($_GET['err']) ? (int)$_GET['err'] : 0;
+                            
+?> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,11 +38,11 @@
 
     <br><br>
 <div class= "loginbox">
-    <form action="registration.php" method="post">
+    <form action="successfullogin.php" method="post">
         Email<br>
-        <input type="text" email="" placeholder="e-mail@domain.com"/> <br>
+        <input type="text" name="email" email="" placeholder="e-mail@domain.com"/> <br>
         Password<br>
-        <input type="password" name="" placeholder="*******"/> <br>
+        <input type="password" name="password" placeholder="*******"/> <br>
         <input type="submit" name="Login" value="Login" />
 </form>
 </div> 
