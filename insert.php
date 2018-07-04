@@ -23,7 +23,7 @@
 
 	
 					$sql ="INSERT INTO registeredusers(`firstname`, `lastname`, `contact`, `address`, `email`, `password`)" 
-					."VALUES ('$fname','$lname','$contact','$address','$email','$password')";
+					."VALUES ('$fname','$lname','$contact','$address','$email','".SHA1($_POST['password'])."')";
 				
 			//if query is successful, redirect to ../php/homepage.php
 				if ($con->query($sql)===true) {
