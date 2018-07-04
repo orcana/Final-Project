@@ -25,7 +25,7 @@
 					$sql ="INSERT INTO registeredusers(`firstname`, `lastname`, `contact`, `address`, `email`, `password`)" 
 					."VALUES ('$fname','$lname','$contact','$address','$email','".SHA1($_POST['password'])."')";
 				
-			//if query is successful, redirect to ../php/homepage.php
+			//if query is successful, redirect to ../php/index.php
 				if ($con->query($sql)===true) {
 					$_SESSION['message']="Registration successful! Added $name to the database";
 					header('Location: index.php');
