@@ -39,26 +39,27 @@
 <br><br>
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
-  <img src="pics/four_seater.jpg" style="width:100%">
+  <img src="pics/four_seater.jpg" style="width:100%"/>
   <div class="text">Seats four to eight persons, perfect for a small group.</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
-  <img src="pics/eight_seater.jpg" style="width:100%">
-  <div class="text">Seats eight to twelve persons./div>
+  <img src="pics/eight_seater.jpg" style="width:100%"/>
+  <div class="text">Seats eight to twelve persons.</div>
 </div>
-     
+    
+
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
-  <img src="pics/twelve_seater.jpg" style="width:100%">
-  <div class="text">Seats twelve to eighteen persons perfect for large groups.</div>
+  <img src="pics/twelve_seater.jpg" style="width:100%"/>
+  <div class="text">Seats twelve to eighteen persons.</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
+
 <br>
 
 <div style="text-align:center">
@@ -67,11 +68,9 @@
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
 </div>
-    
-    </table>
     <br>
     <br>
-    
+        </div>
     <script>
 var slideIndex = 1;
 showSlides(slideIndex);
