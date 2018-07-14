@@ -1,10 +1,40 @@
 <?php 
-	$errors = array(
-		1=>"Invalid user name or password, Try again",
-		2=>"Please login to access this area"
-	);
-	$error_id = isset($_GET['err']) ? (int)$_GET['err'] : 0;
-                            
+
+if(isset($_POST['submit'])){
+    $con = mysqli_connect('localhost','root','root','project cs');
+
+
+// value from post
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// query to find registeredusers
+$qregisteredusers = "SELECT * FROM registeredusers WHERE email = '$email' AND password = '".SHA1($_POST['password'])."'";
+
+
+
+// executing the queries 
+$q1= mysqli_query($con,$qregisteredusers);
+
+
+
+// checking registeredusers query result
+if(mysqli_num_rows($q1)==1) {
+	
+// starting session for registeredusers
+    session_start();
+	$row = mysqli_fetch_array($q1, MYSQLI_ASSOC);
+	
+// initialization of the session
+    $_SESSION['user_id'] = $row['user_id'];
+    $_SESSION['firstname'] = $row['firstname'];
+    $_SESSION['email'] = $row['email'];
+    $_SESSION['password'] = $row['password'];
+
+// for redirecting to registeredusers home page
+    header("Location: index.php?login=true");
+} 
+}
 ?> 
 
 
@@ -39,12 +69,12 @@
 
     <br><br>
 <div class= "loginbox">
-    <form action="successfullogin.php" method="post">
+    <form action="" method="post">
         Email<br>
         <input type="text" name="email" email="" placeholder="e-mail@domain.com"/> <br>
         Password<br>
         <input type="password" name="password" placeholder="*******"/> <br>
-        <input type="submit" name="Login" value="Login" />
+        <input type="submit" name="submit" value="Login" />
         Don't have an account? <a href="registrationpage.php"><FONT color="blue">Register here.</FONT></a>
 </form>
 </div> 

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,12 +22,38 @@
 	
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="login.php">Login</a>
+    
+    
+    <?php if(!empty($_SESSION)){
+        echo '<a href="login.php">Logout</a>';
+        } else {
+             echo '<a href="login.php">Login</a>';
+        }
+?>
+  
   <a href="menu.php">Menu</a>
   <a href="seating.php">Seatings</a>
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
+    
+    <section>
+        
+  <?php 
+         if(!empty($_SESSION)){
+               echo '<h1>Welcome' . ' ' . $_SESSION['firstname'] . '</h1>';
+               
+           
+         } else {
+              
+                 echo '<h1>Welcome</h1>';
+     
+         }
+
+      
+         ?>
+    
+    </section>
     
 //Table which includes pictures and description of the menu item. Should have at least 12-15 items, seperated by appetisers, main courses, dessert, soups ETC ETC of food type.
 <div id ="footer">© 2015-2018, Abrielle's Cuisine</div>

@@ -3,7 +3,7 @@
 $con = mysqli_connect('localhost','root','','project cs');
 
 if (!isset($_POST['Login'])){
-	Header("Location: login.php?err=2");
+	header("Location: login.php?err=2");
 	die ();
 }
 
@@ -11,9 +11,8 @@ if (!isset($_POST['Login'])){
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-
 // query to find registeredusers
-$qregisteredusers = "SELECT * From registeredusers WHERE email = '$email' AND password = '$password'";
+$qregisteredusers = "SELECT * FROM registeredusers WHERE email = '$email' AND password = '$password'";
 
 
 
@@ -35,7 +34,7 @@ $_SESSION['email'] = $row['email'];
 $_SESSION['password'] = $row['password'];
 
 // for redirecting to registeredusers home page
-Header("Location: index.php");
+    header("Location: index.php&login=true");
 }
 
 

@@ -1,12 +1,4 @@
-<?php 
-$con = mysqli_connect('localhost','root','','project cs');
-$ID=$_SESSION['ID'];
-$query="SELECT * FROM registereusers WHERE user_id=$ID";
-	$result = mysqli_query($con,$query);
-	$row= mysqli_fetch_assoc($result);
-	$Name=$row['firstname'];
-?>
-
+<?php   session_start(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -23,15 +15,25 @@ $query="SELECT * FROM registereusers WHERE user_id=$ID";
        
       
        <h1><a href="index.php"><img src="pics/mainlogo.png" alt="logo" width ="120px" height="120px"/></h1>
-     
+         
     
     </section>
        
      <section>
-       
-      
-       <h1>Welcome, <?php echo "$Name"?> <h1> 
+       <?php 
+         if(!empty($_SESSION['firstname'])){
+
+               echo '<h1>Welcome' . ' ' . $_SESSION['firstname'] . '</h1>';
+               
+           
+         } else {
+              
+                 echo '<h1>Welcome</h1>';
      
+         }
+
+      
+         ?>
     
     </section>   
   
@@ -39,7 +41,12 @@ $query="SELECT * FROM registereusers WHERE user_id=$ID";
 	
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="login.php">Login</a>
+      <?php if($_GET['login'] == true){
+        echo '<a href="login.php">Logout</a>';
+        } else {
+             echo '<a href="login.php">Login</a>';
+        }
+?>
   <a href="menu.php">Menu</a>
   <a href="seating.php">Seatings</a>
   <a href="contactus.php">Contact Us</a>
