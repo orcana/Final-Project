@@ -44,10 +44,10 @@
   </select><br><br><br><br>
     Select Seat Type:<br>    
   <select name="Seating">
-    <option value="2 Seats">Two Seater</option>
-    <option value="4 Seats">Four Seater</option>
-    <option value="12 Seats">Twelve Seater</option>
-    <option value="16 Seats">Sixteen Seats</option>
+    <option value="1">Two Seater</option>
+    <option value="2">Four Seater</option>
+    <option value="3">Twelve Seater</option>
+    <option value="4">Sixteen Seats</option>
   </select><br><br><br><br>
     Select Time:<br> 
   <select name="Time">

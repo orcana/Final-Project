@@ -16,7 +16,7 @@
 
 
 	
-					$sql ="INSERT INTO `reserving`(`Day of the week`, `Seating`, `Time`) " 
+					$sql ="INSERT INTO `reserving`(`day_of_week`, `Seating`, `Time`) " 
 					."VALUES ($day,$seat,$time)";
                     
 			//if query is successful, redirect to ../php/index.php
