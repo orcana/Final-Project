@@ -44,7 +44,7 @@
     //Information about us here
     <br>
     <br>
-    //Hyperlink for the privacy policy here
+        <p align="center">Click here to read our <a href="privacypolicy.php"><FONT color="blue">Privacy Policy</FONT></a></p>
 <div id ="footer">© 2015-2018, Abrielle's Cuisine</div>
 </body>
 </html>
