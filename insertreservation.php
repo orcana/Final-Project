@@ -16,13 +16,17 @@
 
 
 	
-					$sql ="INSERT INTO `reserving`(`day_of_week`, `Seating`, `Time`) " 
+					$sql ="INSERT INTO `reserving`(`day_of_week`, `reserve_id`, `Time`) " 
 					."VALUES ($day,$seat,$time)";
                     
+        
+        
 			//if query is successful, redirect to ../php/index.php
 				if ($con->query($sql)===true) {
+                    $_SESSION['reserve_id'] =mysqli_insert_id($con);
+                    
 					$_SESSION['message']="Registration successful! Added $name to the database";
-					header('Location: index.php');
+					header('Location: reservationconfirmation.php');
 			
 				}else{
 					$_SESSION['message'] = "Error!!!";
