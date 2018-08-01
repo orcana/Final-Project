@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="CSS\style.css" type="text/css"/>    
 </head>
     <body>
-    <section>
-
+   <section>
+       
+      
        <h1><a href="index.php"><img src="pics/mainlogo.png" alt="logo" width ="120px" height="120px"/></h1>
-     
+         
     
     </section>
   

@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="CSS\style.css" type="text/css"/>    
 </head>
 <body>
-    <section>       
-      <div id ="logo">
-        <img src="pics/logo.jpg" alt="logo" width ="50px" height="48px" />
-    </div>
-       <h1>Abrille's Cuisine</h1>     
+    <section>
+       
+      
+       <h1><a href="index.php"><img src="pics/mainlogo.png" alt="logo" width ="120px" height="120px"/></h1>
+         
     
-    </section>  
+    </section> 
 
 	
 <div class="topnav">
