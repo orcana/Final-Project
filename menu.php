@@ -23,14 +23,23 @@
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
     
+     <?php 
+         if(!empty($_SESSION['firstname'])){
+
+               echo '<a href="logout.php">Logout</a>';
+               
+           
+         } else {
+              
+              echo   '<a href="login.php">Login</a>';
+     
+         }
+
+      
+    ?>
     
-    <?php if(!empty($_SESSION)){
-        echo '<a href="login.php">Logout</a>';
-        } else {
-             echo '<a href="login.php">Login</a>';
-        }
-?>
-  
+    
+    
   <a href="menu.php">Menu</a>
   <a href="seating.php">Seatings</a>
   <a href="contactus.php">Contact Us</a>
