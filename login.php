@@ -1,7 +1,7 @@
 <?php 
 
 if(isset($_POST['submit'])){
-    $con = mysqli_connect('localhost','root','root','project cs');
+    $con = mysqli_connect('localhost','root','','project cs');
 
 
 // value from post
