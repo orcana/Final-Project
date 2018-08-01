@@ -63,7 +63,7 @@
     Confirm Password<br>
     <input type="password" confpassword="" name="confirmpassword" placeholder="*******" required autofocus /> <br>
     
-  </a>  <input type="submit" name="Register" onclick="window.location.href='login2.php'"/> <!-- Need to fix the 'onclick' to not automatically redirect-->
+  </a>  <input type="submit" name="Register" onclick="window.location.href='login.php'"/> <!-- Need to fix the 'onclick' to not automatically redirect-->
     
 
 </form>
