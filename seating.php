@@ -46,31 +46,41 @@
 </div>
         
 <!-- Slideshow container -->
+     <p style="font-family:Brush Script MT; text-align:center; font-size:300%;"> Available Seats</p><br><br>
+<section style="padding: 5px 10% 5px 10%" >      
  <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
-  <img src="pics/two_seater.jpg" style="width:100%">
-  <div class="text">Seats two persons, perfect for seating of a single person or couple.</div>
+ <a href="pics/two_seater.jpg">
+     <img src="pics/two_seater.jpg" style="width:100%"/>
+    </a>    
+  <div class="text">Seats two persons, perfect for seating of a single person or couple. Cost:$200.00</div>
 </div>
 <br><br>
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
-  <img src="pics/four_seater.jpg" style="width:100%"/>
-  <div class="text">Seats four to eight persons, perfect for a small group.</div>
+  <a href="pics/four_seater.jpg">
+      <img src="pics/four_seater.jpg" style="width:100%"/>
+    </a>
+  <div class="text">Seats four to eight persons, perfect for a small group. Cost: $350.00</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
-  <img src="pics/eight_seater.jpg" style="width:100%"/>
-  <div class="text">Seats eight to twelve persons.</div>
+  <a href="pics/eight_seater.jpg">
+      <img src="pics/eight_seater.jpg" style="width:100%"/>
+    </a>
+  <div class="text">Seats eight to twelve persons. Cost: $500.00</div>
 </div>
     
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
-  <img src="pics/twelve_seater.jpg" style="width:100%"/>
-  <div class="text">Seats twelve to eighteen persons.</div>
+  <a href="pics/twelve_seater.jpg">
+      <img src="pics/twelve_seater.jpg" style="width:100%"/>
+    </a>
+  <div class="text">Seats twelve to eighteen persons. Cost:$650.00</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -88,6 +98,7 @@
     <br>
     <br>
         </div>
+    </section>
     <script>
 var slideIndex = 1;
 showSlides(slideIndex);
