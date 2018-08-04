@@ -39,7 +39,7 @@
   <a href="aboutus.php">About Us</a>
 </div>
 <section style="padding: 10px 10% 5px 10%" > 
-    <p style="font-family:courier; text-align:center; font-size:200%;"> Privacy Policy</p><br><br>
+    <p style="font-family:Brush Script MT; text-align:center; font-size:300%;"> Privacy Policy</p><br><br>
 WEBSITE PRIVACY PROTECTION STATEMENT<br> 
 We stress the importance of privacy and are committed to earning your trust by adopting high standards for the protection of your personal information.<br><br>
 This policy applies to our website(s) and outlines the type of personal information we collect and receive, the circumstances in which we collect or receive personal information, the policies and procedures we have established outlining its use and storage, and for sharing certain types of personal information in certain limited circumstances, the procedures you should follow if you have any questions or requests in respect of your personal information or our policies and procedures and the person to whom such questions or requests should be directed, and the means by which to communicate with that person.<br><br>

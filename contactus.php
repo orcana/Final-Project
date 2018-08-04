@@ -42,6 +42,7 @@
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
+       <p style="font-family:Brush Script MT; text-align:center; font-size:300%;"> Contact Us</p><br><br>
     //Information to contact us here
 
     <div id ="footer">© 2015-2018, Abrielle's Cuisine</div></body>
