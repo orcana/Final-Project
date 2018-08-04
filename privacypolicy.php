@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Abrielle's Dining</title>
-    <div id ="logo">
-        <img src="logo.jpg" alt = "logo" width ="50px" height="48px" usemap="logo"></img>
-        <map name ="logo">
-        <area shape="rect" coords="0,0,150,150" href="index.php" alt="Logo">
-        </map>
-    </div>
-    <h1>Privacy Policy</h1>
-    <!-- external style referencing file location-->
-	<link rel="stylesheet" href="CSS\style.css" type="text/css"/>
-    <div class="topnav">
+    <title>Abrille's Cuisine</title>
+    
+	<!-- external style referencing file location-->
+    <link rel="stylesheet" href="CSS\style.css" type="text/css"/>    
+</head>
+<body>
+    <section>       
+      
+       <h1><a href="index.php"><img src="pics/mainlogo.png" alt="logo" width ="120px" height="120px"/></h1>         
+    
+    </section> 
+
+	
+<div class="topnav">
   <a class="active" href="index.php">Home</a>
     
      <?php 
@@ -27,8 +30,7 @@
          }
 
       
-    ?>
-    
+    ?>   
     
     
   <a href="menu.php">Menu</a>
@@ -36,9 +38,8 @@
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
-</head>
-<body>
-<section style="padding: 10px 10% 5px 10%" >  
+<section style="padding: 10px 10% 5px 10%" > 
+    <p style="font-family:courier; text-align:center; font-size:200%;"> Privacy Policy</p>
 WEBSITE PRIVACY PROTECTION STATEMENT<br> 
 We stress the importance of privacy and are committed to earning your trust by adopting high standards for the protection of your personal information.<br><br>
 This policy applies to our website(s) and outlines the type of personal information we collect and receive, the circumstances in which we collect or receive personal information, the policies and procedures we have established outlining its use and storage, and for sharing certain types of personal information in certain limited circumstances, the procedures you should follow if you have any questions or requests in respect of your personal information or our policies and procedures and the person to whom such questions or requests should be directed, and the means by which to communicate with that person.<br><br>
