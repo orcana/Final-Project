@@ -42,8 +42,19 @@
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
+                 
+        <section style="padding: 10px 10% 40px 10%" >
        <p style="font-family:Brush Script MT; text-align:center; font-size:300%;"> Contact Us</p><br><br>
-    //Information to contact us here
+    <p style="text-align:left;">
+    To contact Abrille's:<br><br> 
+    <img src="pics/locationimage.png" style="width:5%"/> #123 John's Street, Port-of-Spain, Trinidad.<br><br>
+    <img src="pics/emailimage.png" style="width:5%"/> abrillesdining@gmail.com<br><br>
+    <img src="pics/cellphone.png" style="width:5%"/> +1-868-123-4567<br><br>
+    <img src="pics/landline.png" style="width:5%"/>  +1-868-987-6543<br><br>  
+    <img src="pics/fb%20logo.png" style="width:5%"/> Abrille's Dining<br><br>
+    <img src="pics/twitterlogo.png" style="width:5%"/> @AbrilleDining
+       </section></p>
+       
 
     <div id ="footer">© 2015-2018, Abrielle's Cuisine</div></body>
 </html>
