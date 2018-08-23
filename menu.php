@@ -41,10 +41,34 @@
   <a href="contactus.php">Contact Us</a>
   <a href="aboutus.php">About Us</a>
 </div>
-    
-   
-    
-//Table which includes pictures and description of the menu item. Should have at least 12-15 items, seperated by appetisers, main courses, dessert, soups ETC ETC of food type.
+ <table style="width:100%">
+<tr>
+ <th>   
+     <p style="text-align:center;">
+         <a href="appetizers.php">
+      <img src="pics/appetizers.png" style="width:40%"/><br>
+    <a href="mainmenu.php">
+      <img src="pics/MainCourse.png" style="width:40%"/><br>         
+     
+     </p>
+     
+ </th>      
+   <th>
+        <p style="text-align:left;">
+            <a href="entree.php">
+      <img src="pics/entree.png" style="width:40%"/><br>
+                <a href="dessert.php">
+      <img src="pics/dessert.png" style="width:40%"/><br>
+     
+     </p>            
+                    
+                    </th> 
+     </tr>   
+     </table>
+    <p style="text-align:center;">
+            <a href="drinks.php">
+      <img src="pics/drinks.png" style="width:20%"/><br>
+                <a href="drinks.php">
 <div id ="footer">© 2015-2018, Abrielle's Cuisine</div>
 </body>
 </html>
