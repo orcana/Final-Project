@@ -47,38 +47,46 @@
  <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
- <a href="pics/two_seater.jpg">
-     <img src="pics/two_seater.jpg" style="width:100%"/>
+  <div class="numbertext">1 / 5</div>
+ <a href="pics/Appetizers/chickenparmsticks.jpeg">
+     <img src="pics/Appetizers/chickenparmsticks.jpeg" style="width:100%"/>
     </a>    
-  <div class="text">Seats two persons, perfect for seating of a single person or couple. Cost:$200.00</div>
+  <div class="text">Chicken Parmesan Sticks. Cost: $45.00</div>
 </div>
 <br><br>
 <div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <a href="pics/four_seater.jpg">
-      <img src="pics/four_seater.jpg" style="width:100%"/>
+  <div class="numbertext">2 / 5</div>
+  <a href="pics/Appetizers/roastedtomatotart.jpg">
+      <img src="pics/Appetizers/roastedtomatotart.jpg" style="width:100%"/>
     </a>
-  <div class="text">Seats four to eight persons, perfect for a small group. Cost: $350.00</div>
+  <div class="text">Roasted Tomato Tart. Cost: $35.00</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <a href="pics/eight_seater.jpg">
-      <img src="pics/eight_seater.jpg" style="width:100%"/>
+  <div class="numbertext">3 / 5</div>
+  <a href="pics/Appetizers/Chickpea-Bruschetta.jpg">
+      <img src="pics/Appetizers/Chickpea-Bruschetta.jpg" style="width:100%"/>
     </a>
-  <div class="text">Seats eight to twelve persons. Cost: $500.00</div>
+  <div class="text">Chickpea (Channa) Bruschetta.Cost:$40.00 </div>
 </div>
     
 
 <div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <a href="pics/twelve_seater.jpg">
-      <img src="pics/twelve_seater.jpg" style="width:100%"/>
+  <div class="numbertext">4 / 5</div>
+  <a href="pics/Appetizers/grilledseafoodsalad.jpg">
+      <img src="pics/Appetizers/grilledseafoodsalad.jpg" style="width:100%"/>
     </a>
-  <div class="text">Seats twelve to eighteen persons. Cost:$650.00</div>
+  <div class="text">Grilled Sea Food Salad. Cost:$50.00</div>
 </div>
 
+     
+     <div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <a href="pics/Appetizers/simplydressedbrocc.jpg">
+      <img src="pics/Appetizers/simplydressedbrocc.jpg" style="width:100%"/>
+    </a>
+  <div class="text">Simply Dressed Bocconcini. Cost:$40.00</div>
+</div>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -90,11 +98,13 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
 </div>
     <br>
     <br>
         </div>
     </section>
+        <p style="text-align:center;"> Click to return to the <a href="menu.php"><FONT color="blue">Menu.</FONT></a></p>
     <script>
 var slideIndex = 1;
 showSlides(slideIndex);
