@@ -44,7 +44,7 @@ h4
 
 /* Table */
 th{
-	font-size: 25px;
+	/*font-size: 25px;*/
 	color:#ffffff;
 
 }
@@ -207,7 +207,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 700px;
   position: relative;
   margin: auto;
 }
