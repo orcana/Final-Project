@@ -1,6 +1,6 @@
 <?php 
 
-if(isset($_POST['submit'])){
+if(isset($_POST['submit'])){  //isset checks to see if info is in the background
     $con = mysqli_connect('localhost','root','','project cs');
 
 
@@ -9,7 +9,12 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 // query to find registeredusers
-$qregisteredusers = "SELECT * FROM registeredusers WHERE email = '$email' AND password = '".SHA1($_POST['password'])."'";
+$qregisteredusers = 
+"SELECT * 
+FROM registeredusers 
+WHERE email = '$email' AND password = '".SHA1($_POST['password'])."'"
+
+;
 
 
 
