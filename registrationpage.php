@@ -5,7 +5,12 @@
     <title>Abrille's Cuisine</title>
 	<!-- external style referencing file location-->
 	<link rel="stylesheet" href="CSS\style.css" type="text/css"/>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"> // Script pulled from JQuery website to allow the JS below to work
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 </head>
 <body>
  <section>
@@ -46,7 +51,7 @@
  
 <section style="margin-top:30px;" class="loginbox">	
 
-<form method="POST" action="insert.php" >
+<form method="POST" action="insert.php" id="registrationpage">
 
     First Name <br>
     <input type="text" firstname=""  name="firstname" placeholder="First Name" required autofocus/> <br>
@@ -59,30 +64,15 @@
     Email<br>
     <input type="text" email="" name="email" placeholder="email@domain.com" required autofocus/> <br>
     Password<br>
-    <input type="password" password="" name="password" placeholder="*******" required autofocus /> <br>
+    <input type="password" name="password" id="password" required autofocus /> <br>
     Confirm Password<br>
-    <input type="password" confpassword="" name="confirmpassword" placeholder="*******" required autofocus /> <br>
-    
-  </a>  <input type="submit" name="Register" onclick="window.location.href='login.php'"/> <!-- Need to fix the 'onclick' to not automatically redirect-->
+    <input type="password" name="cfpassword" id="cfpassword" required autofocus /> <br>
+    <input type="submit" value="Register" /> <!-- Need to fix the 'onclick' to not automatically redirect-->
     
 
 </form>
-
-</section>	
-	
-<footer>
-	<p id ="footer">© 2015-2018, Abrielle's Cuisine</p>
-</footer>	
-
-
-</body>
-</html>
-
-
 <script> // Javascript to confirm the password
       
-  $(function() {
-  
     // Setup form validation on the #registrationpage element
     $("#registrationpage").validate({
     
@@ -102,7 +92,9 @@
             },
             cfpassword: {
 				required: true,
-				minlength: 5
+				minlength: 5,
+                equalTo : "#password"
+
             }
         },
         
@@ -117,21 +109,24 @@
             contact: "Please enter a contact number",
             address: "Please enter your address!",
             password: {
-                required: "Please enter a password",
+                required: "This field is required",
                 minlength: "Your password must be at least 5 characters long"
             },
-            cfpassword:{
-            	required: "The passwords you typed did not match!",
-                minlength: "Your password must be at least 5 characters long"
-            }
+            
         },
         
-        submitHandler: function(form) {
-        submitHandler: function(form) {
-            form.submit();
-        }
-    });
-
-  });
+            });
+  
   
   </script>
+</section>	
+	
+<footer>
+	<p id ="footer">© 2015-2018, Abrielle's Cuisine</p>
+</footer>	
+
+
+</body>
+</html>
+
+
